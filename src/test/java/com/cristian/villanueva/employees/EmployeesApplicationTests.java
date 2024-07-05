@@ -37,7 +37,7 @@ class EmployeesApplicationTests {
 		Employee employee = new Employee();
 		employee.setEmployee_salary(5000);
 
-		double annualSalary = employeeService.calculateAnnualSalary(employee);
+		int annualSalary = employeeService.calculateAnnualSalary(employee);
 
 		assertEquals(60000, annualSalary);
 	}

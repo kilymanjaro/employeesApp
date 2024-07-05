@@ -31,7 +31,7 @@ public class EmployeeService {
         String url = BASE_URL + "/employee/" + id;
         return restTemplate.getForObject(url, Employee.class);
     }
-    public double calculateAnnualSalary(Employee employee) {
+    public int calculateAnnualSalary(Employee employee) {
         return employee.getEmployee_salary() * 12;
     }
 }
